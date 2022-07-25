@@ -7,4 +7,16 @@
 
 struct EmployeesViewModel {
     let employe: Employee
+    
+    var name: String {
+        "👤 \(employe.fullName)"
+    }
+    
+    var team: String {
+        "🧰 \(employe.fullName)"
+    }
+    
+    var phone: String {
+        "📱 \(employe.fullName)"
+    }
 }

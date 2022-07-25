@@ -44,16 +44,19 @@ final class HomeViewController: UICollectionViewController {
     
     private func binding() {
         viewModel.state.bind { result in
-            switch result {
-            case .success:
-                print("success")
-            case .loading:
-                print("loading")
-            case .failure(let message):
-                print("failure")
-            case .noData:
-                print("noData")
+            DispatchQueue.main.async {
+                switch result {
+                case .success:
+                    self.collectionView.reloadData()
+                case .loading:
+                    print("loading")
+                case .failure(let message):
+                    print("failure")
+                case .noData:
+                    print("noData")
+                }
             }
+            
         }
     }
     
@@ -71,11 +74,12 @@ extension HomeViewController {
         else {
             return UICollectionViewCell()
         }
+        cell.viewModel = viewModel.employeesItem[indexPath.row]
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        viewModel.employeesItem.count
     }
     
     

@@ -7,6 +7,7 @@
 
 protocol HomeViewModel {
     var state: Observable<State> { get set }
+    var employeesItem: [EmployeesViewModel] { get }
     func viewDidLoad()
 }
 
@@ -23,7 +24,7 @@ enum State {
 class HomeViewModelImpl: HomeViewModel{
     
     var state: Observable<State> = .init(.loading)
-    var employees: [EmployeesViewModel] = []
+    var employeesItem: [EmployeesViewModel] = []
     
     func viewDidLoad() {
         ApiClient().request(type: EmployeResponse.self) { result in
@@ -31,7 +32,7 @@ class HomeViewModelImpl: HomeViewModel{
             switch result {
                 
             case .success(let data):
-                self.employees = data.employees.map { EmployeesViewModel(employe: $0) }
+                self.employeesItem = data.employees.map { EmployeesViewModel(employe: $0) }
                 self.state.value = .success
        
             case .failure(let error):
