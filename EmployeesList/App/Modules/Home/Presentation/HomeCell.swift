@@ -77,7 +77,7 @@ final class HomeCell: UICollectionViewCell {
     
     private func configUI() {
         addSubview(profileImage)
-        profileImage.anchor(top: topAnchor, bottom: bottomAnchor, left: leftAnchor, pTop: 15, pBottom: 15, pLeft: 15)
+        profileImage.anchor(top: topAnchor, bottom: bottomAnchor, left: leftAnchor, pTop: 15, pBottom: 15, pLeft: 20)
         addSubview(labelContainerStackView)
         labelContainerStackView.anchor(top: topAnchor, right: rightAnchor, bottom: bottomAnchor, left: profileImage.rightAnchor, pTop: 15, pRight: 15, pBottom: 15, pLeft: 15)
     }
@@ -87,6 +87,12 @@ final class HomeCell: UICollectionViewCell {
         nameLabel.text = viewModel.name
         numberLabel.text = viewModel.phone
         teamLabel.text = viewModel.team
+        profileImage.setImageFromNetwork(withURL: viewModel.image)
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        profileImage.image = nil
     }
     // MARK: - Actions
     

@@ -36,6 +36,7 @@ final class HomeViewController: UICollectionViewController {
     // MARK: - Helpers
     private func configUI() {
         title = "Employees"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     private func configCollectionView() {
