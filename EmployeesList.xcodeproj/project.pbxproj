@@ -9,24 +9,13 @@
 /* Begin PBXBuildFile section */
 		3B28471A288E277100710F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B284719288E277100710F3B /* AppDelegate.swift */; };
 		3B28471C288E277100710F3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28471B288E277100710F3B /* SceneDelegate.swift */; };
-		3B28471E288E277100710F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28471D288E277100710F3B /* ViewController.swift */; };
-		3B284721288E277100710F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B28471F288E277100710F3B /* Main.storyboard */; };
 		3B284723288E277300710F3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B284722288E277300710F3B /* Assets.xcassets */; };
 		3B284726288E277300710F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B284724288E277300710F3B /* LaunchScreen.storyboard */; };
 		3B284731288E277300710F3B /* EmployeesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B284730288E277300710F3B /* EmployeesListTests.swift */; };
-		3B28473B288E277300710F3B /* EmployeesListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28473A288E277300710F3B /* EmployeesListUITests.swift */; };
-		3B28473D288E277300710F3B /* EmployeesListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28473C288E277300710F3B /* EmployeesListUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		3B28472D288E277300710F3B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B28470E288E277100710F3B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B284715288E277100710F3B;
-			remoteInfo = EmployeesList;
-		};
-		3B284737288E277300710F3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3B28470E288E277100710F3B /* Project object */;
 			proxyType = 1;
@@ -39,16 +28,11 @@
 		3B284716288E277100710F3B /* EmployeesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B284719288E277100710F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B28471B288E277100710F3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B28471D288E277100710F3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3B284720288E277100710F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B284722288E277300710F3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B284725288E277300710F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B284727288E277300710F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B28472C288E277300710F3B /* EmployeesListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeesListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B284730288E277300710F3B /* EmployeesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListTests.swift; sourceTree = "<group>"; };
-		3B284736288E277300710F3B /* EmployeesListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeesListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B28473A288E277300710F3B /* EmployeesListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListUITests.swift; sourceTree = "<group>"; };
-		3B28473C288E277300710F3B /* EmployeesListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +44,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3B284729288E277300710F3B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B284733288E277300710F3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,7 +68,6 @@
 			children = (
 				3B284716288E277100710F3B /* EmployeesList.app */,
 				3B28472C288E277300710F3B /* EmployeesListTests.xctest */,
-				3B284736288E277300710F3B /* EmployeesListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +75,8 @@
 		3B284718288E277100710F3B /* EmployeesList */ = {
 			isa = PBXGroup;
 			children = (
-				3B284719288E277100710F3B /* AppDelegate.swift */,
-				3B28471B288E277100710F3B /* SceneDelegate.swift */,
-				3B28471D288E277100710F3B /* ViewController.swift */,
-				3B28471F288E277100710F3B /* Main.storyboard */,
-				3B284722288E277300710F3B /* Assets.xcassets */,
-				3B284724288E277300710F3B /* LaunchScreen.storyboard */,
+				3B28474A288E278200710F3B /* App */,
+				3B284749288E277B00710F3B /* System */,
 				3B284727288E277300710F3B /* Info.plist */,
 			);
 			path = EmployeesList;
@@ -121,10 +93,58 @@
 		3B284739288E277300710F3B /* EmployeesListUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3B28473A288E277300710F3B /* EmployeesListUITests.swift */,
-				3B28473C288E277300710F3B /* EmployeesListUITestsLaunchTests.swift */,
 			);
 			path = EmployeesListUITests;
+			sourceTree = "<group>";
+		};
+		3B284749288E277B00710F3B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				3B284719288E277100710F3B /* AppDelegate.swift */,
+				3B28471B288E277100710F3B /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		3B28474A288E278200710F3B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE8747288E293F007CB88F /* Networking */,
+				3B28474C288E279300710F3B /* Scenes */,
+				3B28474B288E278C00710F3B /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3B28474B288E278C00710F3B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B284722288E277300710F3B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3B28474C288E279300710F3B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3B28474D288E27A600710F3B /* LauchScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3B28474D288E27A600710F3B /* LauchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3B284724288E277300710F3B /* LaunchScreen.storyboard */,
+			);
+			path = LauchScreen;
+			sourceTree = "<group>";
+		};
+		3BEE8747288E293F007CB88F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +185,6 @@
 			productReference = 3B28472C288E277300710F3B /* EmployeesListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3B284735288E277300710F3B /* EmployeesListUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B284746288E277300710F3B /* Build configuration list for PBXNativeTarget "EmployeesListUITests" */;
-			buildPhases = (
-				3B284732288E277300710F3B /* Sources */,
-				3B284733288E277300710F3B /* Frameworks */,
-				3B284734288E277300710F3B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3B284738288E277300710F3B /* PBXTargetDependency */,
-			);
-			name = EmployeesListUITests;
-			productName = EmployeesListUITests;
-			productReference = 3B284736288E277300710F3B /* EmployeesListUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +199,6 @@
 						CreatedOnToolsVersion = 13.3;
 					};
 					3B28472B288E277300710F3B = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = 3B284715288E277100710F3B;
-					};
-					3B284735288E277300710F3B = {
 						CreatedOnToolsVersion = 13.3;
 						TestTargetID = 3B284715288E277100710F3B;
 					};
@@ -221,7 +219,6 @@
 			targets = (
 				3B284715288E277100710F3B /* EmployeesList */,
 				3B28472B288E277300710F3B /* EmployeesListTests */,
-				3B284735288E277300710F3B /* EmployeesListUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +230,10 @@
 			files = (
 				3B284726288E277300710F3B /* LaunchScreen.storyboard in Resources */,
 				3B284723288E277300710F3B /* Assets.xcassets in Resources */,
-				3B284721288E277100710F3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3B28472A288E277300710F3B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B284734288E277300710F3B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B28471E288E277100710F3B /* ViewController.swift in Sources */,
 				3B28471A288E277100710F3B /* AppDelegate.swift in Sources */,
 				3B28471C288E277100710F3B /* SceneDelegate.swift in Sources */,
 			);
@@ -272,15 +260,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B284732288E277300710F3B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B28473D288E277300710F3B /* EmployeesListUITestsLaunchTests.swift in Sources */,
-				3B28473B288E277300710F3B /* EmployeesListUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,22 +268,9 @@
 			target = 3B284715288E277100710F3B /* EmployeesList */;
 			targetProxy = 3B28472D288E277300710F3B /* PBXContainerItemProxy */;
 		};
-		3B284738288E277300710F3B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3B284715288E277100710F3B /* EmployeesList */;
-			targetProxy = 3B284737288E277300710F3B /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3B28471F288E277100710F3B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B284720288E277100710F3B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3B284724288E277300710F3B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +408,6 @@
 				INFOPLIST_FILE = EmployeesList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +435,6 @@
 				INFOPLIST_FILE = EmployeesList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -526,42 +490,6 @@
 			};
 			name = Release;
 		};
-		3B284747288E277300710F3B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TNSM43P2F3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.javiercueto.EmployeesListUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EmployeesList;
-			};
-			name = Debug;
-		};
-		3B284748288E277300710F3B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TNSM43P2F3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.javiercueto.EmployeesListUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EmployeesList;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,15 +516,6 @@
 			buildConfigurations = (
 				3B284744288E277300710F3B /* Debug */,
 				3B284745288E277300710F3B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B284746288E277300710F3B /* Build configuration list for PBXNativeTarget "EmployeesListUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B284747288E277300710F3B /* Debug */,
-				3B284748288E277300710F3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
