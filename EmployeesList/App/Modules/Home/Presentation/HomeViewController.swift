@@ -10,7 +10,7 @@ import UIKit
 final class HomeViewController: UICollectionViewController {
     
     // MARK: - Public properties
-    private let viewModel: HomeViewModel
+    private var viewModel: HomeViewModel
     
     // MARK: - Private properties
     

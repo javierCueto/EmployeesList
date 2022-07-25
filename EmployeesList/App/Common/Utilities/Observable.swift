@@ -5,7 +5,13 @@
 //  Created by Javier Cueto on 25/07/22.
 //
 
-class Observable<T> {
+protocol Bindable {
+    associatedtype BindableProtocol
+    var value: BindableProtocol { get }
+    mutating func bind(_ closure: @escaping (BindableProtocol) -> Void)
+}
+
+struct Observable<T>: Bindable {
 
     var value: T {
         didSet {
@@ -19,7 +25,7 @@ class Observable<T> {
         self.value = value
     }
 
-    func bind(_ closure: @escaping (T) -> Void) {
+    mutating func bind(_ closure: @escaping (T) -> Void) {
         closure(value)
         listener = closure
     }

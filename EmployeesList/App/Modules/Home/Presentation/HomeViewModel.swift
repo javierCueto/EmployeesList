@@ -6,7 +6,7 @@
 //
 
 protocol HomeViewModel {
-    var state: Observable<State> { get }
+    var state: Observable<State> { get set }
     func viewDidLoad()
 }
 
@@ -31,8 +31,9 @@ class HomeViewModelImpl: HomeViewModel{
             switch result {
                 
             case .success(let data):
-                self.state.value = .success
                 self.employees = data.employees.map { EmployeesViewModel(employe: $0) }
+                self.state.value = .success
+       
             case .failure(let error):
                 self.state.value = .failure(message: error.localizedDescription)
             }

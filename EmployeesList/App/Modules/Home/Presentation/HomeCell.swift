@@ -16,6 +16,8 @@ final class HomeCell: UICollectionViewCell {
     // MARK: - Public properties
     
     // MARK: - Private properties
+    
+    
     var viewModel: EmployeesViewModel? {
         didSet {
             configureData()
