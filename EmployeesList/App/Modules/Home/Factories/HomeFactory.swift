@@ -14,7 +14,10 @@ protocol HomeFactory {
 struct HomeFactoryImpl: HomeFactory {
     
     func makeHome() -> UIViewController {
-        let homeController = HomeViewController(collectionViewLayout: UICollectionViewLayout())
+        let viewModel = HomeViewModelImpl()
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
+        let homeController = HomeViewController(viewModel: viewModel, layout: layout)
         let nav = UINavigationController(rootViewController: homeController)
         return nav
     }

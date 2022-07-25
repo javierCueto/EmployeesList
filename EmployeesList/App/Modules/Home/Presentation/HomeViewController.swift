@@ -7,36 +7,52 @@
 
 import UIKit
 
-class HomeViewController: UICollectionViewController {
+final class HomeViewController: UICollectionViewController {
     
     // MARK: - Public properties
-    private var viewModel = HomeViewModelImpl()
+    private let viewModel: HomeViewModel
     
     // MARK: - Private properties
     
     // MARK: - Life Cycle
     
+    init(viewModel: HomeViewModel, layout: UICollectionViewFlowLayout) {
+        self.viewModel = viewModel
+        super.init(collectionViewLayout: layout)
+    }
+    
+    required init?(coder: NSCoder) {
+        return nil
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-        viewModel.viewDidLoad()
+        configCollectionView()
         binding()
+        viewModel.viewDidLoad()
     }
     
     // MARK: - Helpers
     private func configUI() {
-        collectionView.backgroundColor = .blue
+        title = "Employees"
+    }
+    
+    private func configCollectionView() {
+        collectionView.register(HomeCell.self, forCellWithReuseIdentifier: HomeCell.identifier)
     }
     
     private func binding() {
         viewModel.state.bind { result in
-            guard let result = result else { return }
             switch result {
-                
-            case .success(let data):
-                print(data)
-            case .failure(let error):
-                print(error)
+            case .success:
+                print("success")
+            case .loading:
+                print("loading")
+            case .failure(let message):
+                print("failure")
+            case .noData:
+                print("noData")
             }
         }
     }
@@ -45,4 +61,23 @@ class HomeViewController: UICollectionViewController {
     
     // MARK: - Extension here
 
+}
+
+extension HomeViewController {
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCell.identifier, for: indexPath) as? HomeCell
+        else {
+            return UICollectionViewCell()
+        }
+        return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        10
+    }
+    
+    
+    
 }
