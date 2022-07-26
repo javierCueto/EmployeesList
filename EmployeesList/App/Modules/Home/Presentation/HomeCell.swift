@@ -24,7 +24,6 @@ final class HomeCell: UICollectionViewCell {
     private let profileImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "profile")
         imageView.width(size: 70)
         imageView.layer.cornerRadius = 70 / 2
         imageView.layer.masksToBounds = true

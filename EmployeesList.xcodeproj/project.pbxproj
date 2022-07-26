@@ -26,6 +26,8 @@
 		3BEE8769288EDCD3007CB88F /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8768288EDCD3007CB88F /* EmployeesViewModel.swift */; };
 		3BEE876B288EE2B5007CB88F /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE876A288EE2B5007CB88F /* HomeCell.swift */; };
 		3BEE876D288F22B1007CB88F /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE876C288F22B1007CB88F /* UIView+Constraints.swift */; };
+		3BEE877028904150007CB88F /* UIViewImage+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE876F28904150007CB88F /* UIViewImage+Download.swift */; };
+		3BEE8774289041CD007CB88F /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8773289041CD007CB88F /* ImageStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		3BEE8768288EDCD3007CB88F /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
 		3BEE876A288EE2B5007CB88F /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		3BEE876C288F22B1007CB88F /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		3BEE876F28904150007CB88F /* UIViewImage+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewImage+Download.swift"; sourceTree = "<group>"; };
+		3BEE8773289041CD007CB88F /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		3B28474A288E278200710F3B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE877128904178007CB88F /* Persistent */,
 				3BEE874C288E2DCA007CB88F /* Coordinator */,
 				3BEE874B288E2DC3007CB88F /* Common */,
 				3BEE8747288E293F007CB88F /* Networking */,
@@ -193,9 +198,9 @@
 		3BEE874B288E2DC3007CB88F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE876E2890412E007CB88F /* Extensions */,
 				3BEE8765288EDAD7007CB88F /* Utilities */,
 				3BEE8756288E33DF007CB88F /* Model */,
-				3BEE876C288F22B1007CB88F /* UIView+Constraints.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -267,6 +272,31 @@
 				3BEE8766288EDAE4007CB88F /* Observable.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3BEE876E2890412E007CB88F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE876C288F22B1007CB88F /* UIView+Constraints.swift */,
+				3BEE876F28904150007CB88F /* UIViewImage+Download.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3BEE877128904178007CB88F /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE8772289041A9007CB88F /* ImageStorage */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		3BEE8772289041A9007CB88F /* ImageStorage */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE8773289041CD007CB88F /* ImageStorage.swift */,
+			);
+			path = ImageStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,9 +402,11 @@
 				3BEE8767288EDAE4007CB88F /* Observable.swift in Sources */,
 				3BEE8755288E3388007CB88F /* ApiClient.swift in Sources */,
 				3BEE8758288E3422007CB88F /* Employee.swift in Sources */,
+				3BEE877028904150007CB88F /* UIViewImage+Download.swift in Sources */,
 				3BEE874E288E2DDC007CB88F /* AppCoordinator.swift in Sources */,
 				3BEE876B288EE2B5007CB88F /* HomeCell.swift in Sources */,
 				3BEE875E288E3CC5007CB88F /* HomeViewModel.swift in Sources */,
+				3BEE8774289041CD007CB88F /* ImageStorage.swift in Sources */,
 				3B28471A288E277100710F3B /* AppDelegate.swift in Sources */,
 				3BEE8764288E3D55007CB88F /* LoadEmployeesUseCase.swift in Sources */,
 				3BEE8750288E2DEA007CB88F /* Coordinator.swift in Sources */,
