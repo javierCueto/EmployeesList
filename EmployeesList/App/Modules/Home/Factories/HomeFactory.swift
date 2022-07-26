@@ -14,12 +14,13 @@ protocol HomeFactory {
 struct HomeFactoryImpl: HomeFactory {
     
     func makeHome() -> UIViewController {
-        let viewModel = HomeViewModelImpl()
+        let api = ApiClient()
+        let employeesRepository = EmployeesRepositoryImpl(apiClient: api)
+        let useCase = LoadEmployeesUseCaseImpl(employeesRepository: employeesRepository)
+        let viewModel = HomeViewModelImpl(loadEmployeesUseCase: useCase)
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
-        let homeController = HomeViewController(viewModel: viewModel, layout: layout)
-        let nav = UINavigationController(rootViewController: homeController)
-        return nav
+        return HomeViewController(viewModel: viewModel, layout: layout)
     }
     
 }

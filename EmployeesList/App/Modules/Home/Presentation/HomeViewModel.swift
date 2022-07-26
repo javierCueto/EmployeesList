@@ -6,35 +6,27 @@
 //
 
 protocol HomeViewModel {
-    var state: Observable<State> { get set }
+    var state: Observable<HomeState> { get set }
     var employeesItem: [EmployeesViewModel] { get }
     func viewDidLoad()
 }
 
-enum State {
-    case success
-    case loading
-    case failure(message: String)
-    case noData
-}
-
-
-
-
-class HomeViewModelImpl: HomeViewModel{
+final class HomeViewModelImpl: HomeViewModel{
     
-    var state: Observable<State> = .init(.loading)
+    private let loadEmployeesUseCase: LoadEmployeesUseCase
+    var state: Observable<HomeState> = .init(.loading)
     var employeesItem: [EmployeesViewModel] = []
     
+    init(loadEmployeesUseCase: LoadEmployeesUseCase) {
+        self.loadEmployeesUseCase = loadEmployeesUseCase
+    }
+    
     func viewDidLoad() {
-        ApiClient().request(type: EmployeResponse.self) { result in
-            
+        loadEmployeesUseCase.execute { result in
             switch result {
-                
             case .success(let data):
                 self.employeesItem = data.employees.map { EmployeesViewModel(employe: $0) }
                 self.state.value = .success
-       
             case .failure(let error):
                 self.state.value = .failure(message: error.localizedDescription)
             }
