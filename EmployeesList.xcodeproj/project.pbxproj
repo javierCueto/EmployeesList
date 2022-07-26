@@ -18,7 +18,7 @@
 		3BEE8753288E2E4B007CB88F /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8752288E2E4B007CB88F /* HomeFactory.swift */; };
 		3BEE8755288E3388007CB88F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8754288E3388007CB88F /* ApiClient.swift */; };
 		3BEE8758288E3422007CB88F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8757288E3422007CB88F /* Employee.swift */; };
-		3BEE875A288E3C5C007CB88F /* EmployeeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8759288E3C5C007CB88F /* EmployeeResponse.swift */; };
+		3BEE875A288E3C5C007CB88F /* EmployeeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8759288E3C5C007CB88F /* EmployeeResponseDTO.swift */; };
 		3BEE875E288E3CC5007CB88F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE875D288E3CC5007CB88F /* HomeViewModel.swift */; };
 		3BEE8764288E3D55007CB88F /* LoadEmployeesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8763288E3D55007CB88F /* LoadEmployeesUseCase.swift */; };
 		3BEE8767288EDAE4007CB88F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8766288EDAE4007CB88F /* Observable.swift */; };
@@ -56,7 +56,7 @@
 		3BEE8752288E2E4B007CB88F /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 		3BEE8754288E3388007CB88F /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		3BEE8757288E3422007CB88F /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
-		3BEE8759288E3C5C007CB88F /* EmployeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeResponse.swift; sourceTree = "<group>"; };
+		3BEE8759288E3C5C007CB88F /* EmployeeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeResponseDTO.swift; sourceTree = "<group>"; };
 		3BEE875D288E3CC5007CB88F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3BEE8763288E3D55007CB88F /* LoadEmployeesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadEmployeesUseCase.swift; sourceTree = "<group>"; };
 		3BEE8766288EDAE4007CB88F /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -230,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				3BEE8757288E3422007CB88F /* Employee.swift */,
-				3BEE8759288E3C5C007CB88F /* EmployeeResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +263,7 @@
 		3BEE8760288E3CF4007CB88F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE8759288E3C5C007CB88F /* EmployeeResponseDTO.swift */,
 				3BEE877B28909471007CB88F /* EmployeesRepository.swift */,
 			);
 			path = Data;
@@ -465,7 +465,7 @@
 				3B28471C288E277100710F3B /* SceneDelegate.swift in Sources */,
 				3BEE874A288E2C8E007CB88F /* HomeViewController.swift in Sources */,
 				3BEE8769288EDCD3007CB88F /* EmployeesViewModel.swift in Sources */,
-				3BEE875A288E3C5C007CB88F /* EmployeeResponse.swift in Sources */,
+				3BEE875A288E3C5C007CB88F /* EmployeeResponseDTO.swift in Sources */,
 				3BEE8753288E2E4B007CB88F /* HomeFactory.swift in Sources */,
 				3BEE876D288F22B1007CB88F /* UIView+Constraints.swift in Sources */,
 				3BEE877F2890980D007CB88F /* HomeState.swift in Sources */,

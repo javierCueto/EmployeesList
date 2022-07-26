@@ -6,7 +6,7 @@
 //
 
 protocol LoadEmployeesUseCase {
-    func execute(completion: @escaping (Result<EmployeResponse,Error>) -> Void)
+    func execute(completion: @escaping (Result<[Employee],Error>) -> Void)
 }
 
 struct LoadEmployeesUseCaseImpl: LoadEmployeesUseCase  {
@@ -17,9 +17,13 @@ struct LoadEmployeesUseCaseImpl: LoadEmployeesUseCase  {
         self.employeesRepository = employeesRepository
     }
     
-    func execute(completion: @escaping (Result<EmployeResponse, Error>) -> Void) {
+    func execute(completion: @escaping (Result<[Employee], Error>) -> Void) {
         employeesRepository.fetchEmployee(completion: completion)
     }
     
-    
 }
+
+protocol EmployeesRepository {
+    func fetchEmployee(completion: @escaping (Result<[Employee], Error>) -> Void)
+}
+

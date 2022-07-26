@@ -25,7 +25,7 @@ final class HomeViewModelImpl: HomeViewModel{
         loadEmployeesUseCase.execute { result in
             switch result {
             case .success(let data):
-                self.employeesItem = data.employees.map { EmployeesViewModel(employe: $0) }
+                self.employeesItem = data.map { EmployeesViewModel(employe: $0) }
                 self.state.value = .success
             case .failure(let error):
                 self.state.value = .failure(message: error.localizedDescription)
