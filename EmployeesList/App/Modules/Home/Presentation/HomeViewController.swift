@@ -11,13 +11,15 @@ final class HomeViewController: UICollectionViewController {
     
     // MARK: - Public properties
     private var viewModel: HomeViewModel
+    private weak var delegate: HomeViewControllerDelegate?
     
     // MARK: - Private properties
     
     // MARK: - Life Cycle
     
-    init(viewModel: HomeViewModel, layout: UICollectionViewFlowLayout) {
+    init(viewModel: HomeViewModel, layout: UICollectionViewFlowLayout, delegate: HomeViewControllerDelegate) {
         self.viewModel = viewModel
+        self.delegate = delegate
         super.init(collectionViewLayout: layout)
     }
     
@@ -83,6 +85,10 @@ extension HomeViewController {
         viewModel.employeesItem.count
     }
     
-    
-    
+}
+
+extension HomeViewController {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelectProfile()
+    }
 }

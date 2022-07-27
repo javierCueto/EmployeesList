@@ -30,6 +30,8 @@
 		3BEE877C28909471007CB88F /* EmployeesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE877B28909471007CB88F /* EmployeesRepository.swift */; };
 		3BEE877F2890980D007CB88F /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE877E2890980D007CB88F /* HomeState.swift */; };
 		3BEE878228918DF6007CB88F /* EmployeeDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE878128918DF6007CB88F /* EmployeeDTO+Mapping.swift */; };
+		3BEE8787289192E6007CB88F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8786289192E6007CB88F /* ProfileViewController.swift */; };
+		3BEE878A28919429007CB88F /* ProfileFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE878928919429007CB88F /* ProfileFactoryImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		3BEE877B28909471007CB88F /* EmployeesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesRepository.swift; sourceTree = "<group>"; };
 		3BEE877E2890980D007CB88F /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
 		3BEE878128918DF6007CB88F /* EmployeeDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeDTO+Mapping.swift"; sourceTree = "<group>"; };
+		3BEE8786289192E6007CB88F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3BEE878928919429007CB88F /* ProfileFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFactoryImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +170,7 @@
 		3B28474C288E279300710F3B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3BEE8776289090EA007CB88F /* EmployeeDetail */,
+				3BEE8776289090EA007CB88F /* Profile */,
 				3BEE8748288E2C69007CB88F /* Home */,
 				3B28474D288E27A600710F3B /* LauchScreen */,
 			);
@@ -303,19 +307,21 @@
 			path = ImageStorage;
 			sourceTree = "<group>";
 		};
-		3BEE8776289090EA007CB88F /* EmployeeDetail */ = {
+		3BEE8776289090EA007CB88F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE87882891940E007CB88F /* Support */,
 				3BEE87792890910D007CB88F /* Data */,
 				3BEE8778289090FE007CB88F /* Domain */,
 				3BEE8777289090F7007CB88F /* Presentation */,
 			);
-			path = EmployeeDetail;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		3BEE8777289090F7007CB88F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3BEE8786289192E6007CB88F /* ProfileViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -373,6 +379,14 @@
 			children = (
 				3BEE8751288E2E36007CB88F /* Factories */,
 				3BEE877D289097FD007CB88F /* Utils */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		3BEE87882891940E007CB88F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE878928919429007CB88F /* ProfileFactoryImpl.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -479,6 +493,7 @@
 			files = (
 				3BEE877C28909471007CB88F /* EmployeesRepository.swift in Sources */,
 				3BEE8767288EDAE4007CB88F /* Observable.swift in Sources */,
+				3BEE878A28919429007CB88F /* ProfileFactoryImpl.swift in Sources */,
 				3BEE8755288E3388007CB88F /* ApiClient.swift in Sources */,
 				3BEE878228918DF6007CB88F /* EmployeeDTO+Mapping.swift in Sources */,
 				3BEE8758288E3422007CB88F /* Employee.swift in Sources */,
@@ -495,6 +510,7 @@
 				3BEE8769288EDCD3007CB88F /* EmployeesViewModel.swift in Sources */,
 				3BEE875A288E3C5C007CB88F /* EmployeeResponseDTO+Mapping.swift in Sources */,
 				3BEE8753288E2E4B007CB88F /* HomeFactory.swift in Sources */,
+				3BEE8787289192E6007CB88F /* ProfileViewController.swift in Sources */,
 				3BEE876D288F22B1007CB88F /* UIView+Constraints.swift in Sources */,
 				3BEE877F2890980D007CB88F /* HomeState.swift in Sources */,
 			);
