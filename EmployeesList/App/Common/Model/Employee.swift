@@ -6,7 +6,7 @@
 //
 
 
-struct Employee: Decodable {
+struct Employee {
     let uuid: String
     let fullName: String
     let phoneNumber: String?

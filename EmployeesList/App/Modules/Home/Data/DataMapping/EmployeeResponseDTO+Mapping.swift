@@ -6,11 +6,11 @@
 //
 
 struct EmployeeResponseDTO: Decodable {
-    let employees: [Employee]
+    let employees: [EmployeeDTO]
 }
 
 extension EmployeeResponseDTO {
     func toDomain() -> [Employee] {
-        return employees
+        return employees.map { $0.toDomain() }
     }
 }

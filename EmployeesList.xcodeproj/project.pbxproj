@@ -18,7 +18,7 @@
 		3BEE8753288E2E4B007CB88F /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8752288E2E4B007CB88F /* HomeFactory.swift */; };
 		3BEE8755288E3388007CB88F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8754288E3388007CB88F /* ApiClient.swift */; };
 		3BEE8758288E3422007CB88F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8757288E3422007CB88F /* Employee.swift */; };
-		3BEE875A288E3C5C007CB88F /* EmployeeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8759288E3C5C007CB88F /* EmployeeResponseDTO.swift */; };
+		3BEE875A288E3C5C007CB88F /* EmployeeResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8759288E3C5C007CB88F /* EmployeeResponseDTO+Mapping.swift */; };
 		3BEE875E288E3CC5007CB88F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE875D288E3CC5007CB88F /* HomeViewModel.swift */; };
 		3BEE8764288E3D55007CB88F /* LoadEmployeesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8763288E3D55007CB88F /* LoadEmployeesUseCase.swift */; };
 		3BEE8767288EDAE4007CB88F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8766288EDAE4007CB88F /* Observable.swift */; };
@@ -29,6 +29,7 @@
 		3BEE8774289041CD007CB88F /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8773289041CD007CB88F /* ImageStorage.swift */; };
 		3BEE877C28909471007CB88F /* EmployeesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE877B28909471007CB88F /* EmployeesRepository.swift */; };
 		3BEE877F2890980D007CB88F /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE877E2890980D007CB88F /* HomeState.swift */; };
+		3BEE878228918DF6007CB88F /* EmployeeDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE878128918DF6007CB88F /* EmployeeDTO+Mapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,7 @@
 		3BEE8752288E2E4B007CB88F /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 		3BEE8754288E3388007CB88F /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		3BEE8757288E3422007CB88F /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
-		3BEE8759288E3C5C007CB88F /* EmployeeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeResponseDTO.swift; sourceTree = "<group>"; };
+		3BEE8759288E3C5C007CB88F /* EmployeeResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		3BEE875D288E3CC5007CB88F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3BEE8763288E3D55007CB88F /* LoadEmployeesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadEmployeesUseCase.swift; sourceTree = "<group>"; };
 		3BEE8766288EDAE4007CB88F /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		3BEE8773289041CD007CB88F /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
 		3BEE877B28909471007CB88F /* EmployeesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesRepository.swift; sourceTree = "<group>"; };
 		3BEE877E2890980D007CB88F /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+		3BEE878128918DF6007CB88F /* EmployeeDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeDTO+Mapping.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,11 +192,10 @@
 		3BEE8748288E2C69007CB88F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3BEE877D289097FD007CB88F /* Utils */,
-				3BEE8760288E3CF4007CB88F /* Data */,
+				3BEE8785289190DA007CB88F /* Support */,
 				3BEE875F288E3CDA007CB88F /* Domain */,
+				3BEE8760288E3CF4007CB88F /* Data */,
 				3BEE875C288E3CB2007CB88F /* Presentation */,
-				3BEE8751288E2E36007CB88F /* Factories */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -263,8 +264,8 @@
 		3BEE8760288E3CF4007CB88F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3BEE8759288E3C5C007CB88F /* EmployeeResponseDTO.swift */,
-				3BEE877B28909471007CB88F /* EmployeesRepository.swift */,
+				3BEE87842891908A007CB88F /* Repositories */,
+				3BEE878328919077007CB88F /* DataMapping */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -348,6 +349,32 @@
 				3BEE8768288EDCD3007CB88F /* EmployeesViewModel.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3BEE878328919077007CB88F /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE878128918DF6007CB88F /* EmployeeDTO+Mapping.swift */,
+				3BEE8759288E3C5C007CB88F /* EmployeeResponseDTO+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		3BEE87842891908A007CB88F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE877B28909471007CB88F /* EmployeesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3BEE8785289190DA007CB88F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE8751288E2E36007CB88F /* Factories */,
+				3BEE877D289097FD007CB88F /* Utils */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +480,7 @@
 				3BEE877C28909471007CB88F /* EmployeesRepository.swift in Sources */,
 				3BEE8767288EDAE4007CB88F /* Observable.swift in Sources */,
 				3BEE8755288E3388007CB88F /* ApiClient.swift in Sources */,
+				3BEE878228918DF6007CB88F /* EmployeeDTO+Mapping.swift in Sources */,
 				3BEE8758288E3422007CB88F /* Employee.swift in Sources */,
 				3BEE877028904150007CB88F /* UIViewImage+Download.swift in Sources */,
 				3BEE874E288E2DDC007CB88F /* AppCoordinator.swift in Sources */,
@@ -465,7 +493,7 @@
 				3B28471C288E277100710F3B /* SceneDelegate.swift in Sources */,
 				3BEE874A288E2C8E007CB88F /* HomeViewController.swift in Sources */,
 				3BEE8769288EDCD3007CB88F /* EmployeesViewModel.swift in Sources */,
-				3BEE875A288E3C5C007CB88F /* EmployeeResponseDTO.swift in Sources */,
+				3BEE875A288E3C5C007CB88F /* EmployeeResponseDTO+Mapping.swift in Sources */,
 				3BEE8753288E2E4B007CB88F /* HomeFactory.swift in Sources */,
 				3BEE876D288F22B1007CB88F /* UIView+Constraints.swift in Sources */,
 				3BEE877F2890980D007CB88F /* HomeState.swift in Sources */,
