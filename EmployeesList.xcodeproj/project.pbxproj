@@ -32,6 +32,7 @@
 		3BEE878228918DF6007CB88F /* EmployeeDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE878128918DF6007CB88F /* EmployeeDTO+Mapping.swift */; };
 		3BEE8787289192E6007CB88F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8786289192E6007CB88F /* ProfileViewController.swift */; };
 		3BEE878A28919429007CB88F /* ProfileFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE878928919429007CB88F /* ProfileFactoryImpl.swift */; };
+		3BEE878C2891A491007CB88F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE878B2891A491007CB88F /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		3BEE878128918DF6007CB88F /* EmployeeDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeDTO+Mapping.swift"; sourceTree = "<group>"; };
 		3BEE8786289192E6007CB88F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3BEE878928919429007CB88F /* ProfileFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFactoryImpl.swift; sourceTree = "<group>"; };
+		3BEE878B2891A491007CB88F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				3BEE8786289192E6007CB88F /* ProfileViewController.swift */,
+				3BEE878B2891A491007CB88F /* ProfileViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				3BEE8764288E3D55007CB88F /* LoadEmployeesUseCase.swift in Sources */,
 				3BEE8750288E2DEA007CB88F /* Coordinator.swift in Sources */,
 				3B28471C288E277100710F3B /* SceneDelegate.swift in Sources */,
+				3BEE878C2891A491007CB88F /* ProfileViewModel.swift in Sources */,
 				3BEE874A288E2C8E007CB88F /* HomeViewController.swift in Sources */,
 				3BEE8769288EDCD3007CB88F /* EmployeesViewModel.swift in Sources */,
 				3BEE875A288E3C5C007CB88F /* EmployeeResponseDTO+Mapping.swift in Sources */,

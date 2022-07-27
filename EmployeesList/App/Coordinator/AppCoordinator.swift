@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeViewControllerDelegate: AnyObject {
-    func didSelectProfile()
+    func didSelectProfile(employee: Employee)
 }
 
 final class AppCoordinator: Coordinator {
@@ -32,9 +32,9 @@ final class AppCoordinator: Coordinator {
 }
 
 extension AppCoordinator: HomeViewControllerDelegate {
-    func didSelectProfile() {
+    func didSelectProfile(employee: Employee) {
         let factory = ProfileFactoryImpl()
-        let nav = UINavigationController(rootViewController: factory.make())
+        let nav = UINavigationController(rootViewController: factory.make(with: employee))
         navigationController.present(nav, animated: true)
     }
 }

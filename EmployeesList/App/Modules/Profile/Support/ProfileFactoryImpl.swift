@@ -8,19 +8,18 @@
 import UIKit
 
 protocol ProfileFactory {
-   func make() -> UIViewController
+   func make(with employee: Employee) -> UIViewController
 }
 
 struct ProfileFactoryImpl: ProfileFactory {
     
-    func make() -> UIViewController {
+    func make(with employee: Employee) -> UIViewController {
 //        let api = ApiClient()
 //        let employeesRepository = EmployeesRepositoryImpl(apiClient: api)
 //        let useCase = LoadEmployeesUseCaseImpl(employeesRepository: employeesRepository)
-//        let viewModel = HomeViewModelImpl(loadEmployeesUseCase: useCase)
+        let viewModel = ProfileViewModelImpl(employee: employee)
 //        let layout = UICollectionViewFlowLayout()
-//        layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
-       return ProfileViewController()
+        return ProfileViewController(viewModel: viewModel)
     }
     
 }

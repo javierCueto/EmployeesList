@@ -89,6 +89,6 @@ extension HomeViewController {
 
 extension HomeViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.didSelectProfile()
+        delegate?.didSelectProfile(employee: viewModel.employeesItem[indexPath.row].employe)
     }
 }
